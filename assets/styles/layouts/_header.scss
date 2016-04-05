@@ -1,0 +1,222 @@
+// Homepage Header
+.home-header {
+  min-height: 590px;
+  background-size: cover;
+  background-position: center center;
+  font-weight: bold;
+  color: white;
+
+  section.cta {
+    margin-top: 70px;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .padding {
+    @include padding(50px);
+  }
+
+}
+
+
+// Header Navigation Bar
+header.main-navigation {
+  position: relative;
+  height: 100px;
+  text-transform: uppercase;
+
+  .container, div.col-xs-12 {
+    height: 100%;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .logo {
+    float: left;
+    font-family: 'Montserrat', 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: -2px;
+    @include vertical-align();
+  
+  }
+
+  
+  // Desktop Header
+  .desktop-nav {
+    display: none;
+    float: right;
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+    @include vertical-align();
+
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      display: inline;
+      padding: 0 7.5px;
+    }
+
+    li:last-of-type a {
+      border: 2px solid white;
+      font-size: 16px;
+      font-family: 'PT Sans Caption', Arial, sans-serif;
+      padding: 17.5px;
+      border-radius: 10px;
+    }
+
+  }
+
+
+  // Mobile Navigation & Overlay
+  .mobile-nav {
+      display: block;
+      float: right;
+      @include vertical-align();
+  }
+
+  .mobile-nav-popup {
+    @include fixed-pos(0px, 0px, 0px, 0px);
+    font-family: 'PT Sans', Arial, sans-serif;
+    display: none;
+    margin: 0;
+    padding-top: 150px;
+    z-index: 150;
+    list-style: none;
+    background: rgba(10, 30, 50, 0.95);
+
+    #close-btn {
+      position: fixed;
+      @include fixed-pos(25px, 25px, auto, auto);
+      color: white;
+      font-size: 36px;
+    }
+
+    li {
+      padding: 7.5px 0;
+      
+      a {
+        color: white;
+        font-size: 28px;
+      }
+    }
+
+  }
+
+}
+  
+
+// Fixed Header Styling - Non Homepage
+header.fixed {
+  @include fixed-pos(auto, 0px, auto, 0px);
+  z-index: 100;
+  background: white;
+
+  a {
+    color: $dark-blue;
+  }
+
+  .desktop-nav {
+    li:last-of-type a {
+      color: $light-blue;
+      border: 2px solid $light-blue;
+    }
+
+    a:hover {
+      color: $light-blue;
+    }
+  }
+}
+
+
+// Make sure that the Desktop header shows up in Desktop view and the mobile header does not
+@media screen and (min-width: 992px) {
+  header.main-navigation {
+    .desktop-nav {
+      display: block;
+    }
+    .mobile-nav {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header.main-navigation {
+    .desktop-nav {
+      li {
+        padding: 0 17.5px;
+      }
+    }
+  }
+}
+
+
+
+
+// Page Title Header
+.page-title {
+  width: 100%;
+  max-width: 1366px;
+  margin: auto;
+  height: auto;
+  color: white;
+
+  .row {
+    height: 100%;
+  }
+
+  .lead {
+    padding: 50px 0px 50px 15px;
+    max-width: 100%;
+    width: 750px;
+  }
+
+  h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-title {
+    height: 260px;
+    
+    .lead {
+      @include vertical-align();
+    }
+  
+  }
+}
+
+
+// Specific Styling for Page Title of
+// the HPA page
+.hpa-page .page-title .lead {
+  padding: 50px 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .hpa-page .page-title .lead {
+    padding: 0 50px;
+  }
+}

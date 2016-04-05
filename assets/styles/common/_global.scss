@@ -1,0 +1,101 @@
+// *** GLOBAL LAYOUT STYLES ***
+
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: $black;
+  overflow-x: hidden;
+  font-family: 'Merriweather', Times, serif;
+}
+
+.body-container {
+  width: 100%;
+  max-width: 1366px;
+  margin: auto;
+}
+
+.container {
+  height: 100%;
+}
+
+.body-padding {
+  padding-top: 100px;  // will only render in non-homepages
+}
+
+// *** TYPOGRAPHY STYLES ***
+
+body {
+  font-size: 16px;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a {
+  -webkit-backface-visibility: hidden;  
+  // prevents the button hover opacity from effecting other elements
+}
+
+h1, h2, h3, h4 {
+  font-family: 'PT Sans Caption', 'PT Sans', Arial, sans-serif;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 60px;
+  margin: 0 0 75px 0;
+}
+
+h3, h4, h5 {
+  color: #50525a;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0 0 40px 0;
+}
+
+h4, h5 {
+  font-size: 30px;
+  margin: 10px 0 30px 0;
+}
+
+h5 {
+  font-family: 'PT Sans Narrow', 'PT Sans Caption', Arial, sans-serif;
+}
+
+p, figcaption {
+  line-height: 24px;
+  margin: 20px 0;
+}
+
+p {
+  font-weight: 300;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+a, button  {
+  @include transition(all 0.5s ease);
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+img {
+  max-width: 100%;
+}

@@ -1,0 +1,20 @@
+// button styles
+a.button {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $turquoise;
+  font-size: 30px;
+  width: 275px;
+  color: white;
+  border-radius: 10px;
+  padding: 17px 0;
+  font-weight: bold;
+  font-family: 'PT Sans Caption', 'PT Sans', Arial, sans-serif;
+  text-shadow: 0px 2px 0px #1c61a0;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+}
