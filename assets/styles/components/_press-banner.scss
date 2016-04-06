@@ -1,0 +1,100 @@
+
+// press-banner styles
+.press-banner {
+  height: auto;
+  padding: 30px 0 15px;
+  font-size: 20px;
+  background: #f8f8f8;
+  font-family: 'PT Sans', Arial, sans-serif; 
+
+  .container, .col-xs-12 { 
+    height: 100%;
+    text-align: center;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  ul {
+    margin: 20px 0 0 0;
+    padding: 0; 
+    width: 100%;
+  }
+
+  li {
+    display: inline;
+    list-style: none;
+  }
+
+  a:hover {
+    opacity: 0.7;
+  }
+
+  img {
+    height: 35px;
+    max-width: 100%;
+    margin-right: 20px;
+    margin-bottom: 25px
+  }
+
+}
+
+
+@media screen and (min-width: 768px) {
+  .press-banner {
+
+    p, ul, li {
+      float: left;
+    }
+
+    li {
+      display: block;
+    }
+
+    img {
+      height: 30px;
+      margin-right: 30px;
+    }
+
+  }
+}
+
+
+@media screen and (min-width: 992px) {
+  .press-banner {
+
+    img {
+      height: 35px;
+      margin-right: 58px;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .press-banner {
+    height: 100px;
+    padding: 0;
+
+    p {
+      // display: inline;
+      margin: 0 85px 0 0 ;
+      @include vertical-align();
+    }
+
+    ul {
+      width: initial;
+      margin: 0;
+      @include vertical-align();
+    }
+
+    img {
+      margin-right: 63px;
+      margin-bottom: 0;
+    }
+
+  }
+
+}
