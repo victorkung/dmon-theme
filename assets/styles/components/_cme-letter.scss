@@ -1,0 +1,49 @@
+
+.cme-letter {
+  margin-top: 150px;
+  margin-bottom: 125px;
+
+  p {
+    margin-bottom: 35px;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  img.portrait {
+    width: 350px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  img.icon, img.family-portrait {
+    margin: auto;
+  }
+
+  img.family-portrait {
+    width: 475px;
+    padding-top: 100px;
+  }
+
+  figure {
+    height: 105px;
+  }
+
+  .margin-top {
+    margin-top: 35px;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .cme-letter {
+    img.portrait {
+      padding-top: 90px;
+    }
+    img.family-portrait {
+      padding-top: 27.5px;
+    }
+  }
+}

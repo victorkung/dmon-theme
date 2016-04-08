@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "http://douglasmonieson.dev"
+    "devUrl": "http://localhost:8888"
   }
 }

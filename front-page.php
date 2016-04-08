@@ -4,7 +4,6 @@
 <?php get_template_part('templates/page', 'header'); ?>
 
 
-
 <!-- Press Banner -->
 <?php if( have_rows('press_banner') ): ?>
 
@@ -82,8 +81,115 @@
 
 <?php endif; ?>
 
-
 <?php the_content(); ?>
+
+
+<!-- CME Letter -->
+<div class="cme-letter">
+
+
+  <!-- Top Section-->
+
+  <?php if( get_field('cme_letter_title') ): ?>
+  
+    <div class="row">
+      <div class="container">
+        <div class="col-xs-12 col-sm-7">
+          <h3><?php echo get_field('cme_letter_title') ?></h3>
+
+          <?php echo get_field('cme_letter_top_section_text'); ?>
+        </div>
+
+        <div class="col-xs-12- col-sm-5">
+          <img src="<?php the_field('cme_letter_top_section_image') ?>" alt="Douglas Monieson Portrait" class="portrait">
+        </div>
+      </div>
+    </div>
+
+
+
+  <!-- Middle Section: 4 Tiles -->
+  <!-- We created a repeater module in ACF for a row of 2 tiles -->
+
+  <?php if( have_rows('cme_letter_middle_section') ): ?>
+
+
+    <?php while( have_rows('cme_letter_middle_section') ): the_row(); 
+
+      // Saving variables
+      $title1 = get_sub_field('tile_1_title');
+      $title2 = get_sub_field('tile_2_title');
+
+      $text1 = get_sub_field('tile_1_text');
+      $text2 = get_sub_field('tile_2_text');
+
+      $image1 = get_sub_field('tile_1_image');
+      $image2 = get_sub_field('tile_2_image');
+
+    ?>  
+
+    <div class="row">
+      <div class="container">
+        <div class="col-xs-12 col-sm-6">
+          <figure class="margin-top">
+            <img src="<?php echo $image1 ?>" class="icon">
+          </figure>
+
+          <figcaption>
+            <?php echo $title1 ?>
+          </figcaption>
+
+          <p>
+            <?php echo $text1 ?>
+          </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-6">
+          <figure class="margin-top">
+            <img src="<?php echo $image2 ?>" class="icon">
+          </figure>
+          <figcaption>
+            <?php echo $title2 ?>
+          </figcaption>
+          <p>
+            <?php echo $text2 ?>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <?php endwhile; ?>
+
+  <?php endif; ?>
+
+
+
+    <!-- Bottom Section -->
+    <div class="row margin-top">
+      <div class="container">
+        <div class="col-xs-12 col-sm-6">
+
+          <?php echo get_field('cme_letter_bottom_section_text'); ?>
+
+        </div>
+
+        <div class="col-xs-12- col-sm-6"><img src="<?php the_field('cme_letter_bottom_section_image') ?>" alt="Douglas Monieson Family Traders" class="family-portrait"></div>
+      </div>
+    </div>
+
+
+<?php endif; ?>
+
+
+
+
+
+
+
+</div>
+
+
+
 
 <?php get_template_part('templates/pre-footer') ?>
 
