@@ -169,7 +169,7 @@
             "label": "CME Letter Title",
             "name": "cme_letter_title",
             "type": "text",
-            "instructions": "",
+            "instructions": "Enter a title for the CME Campaign Letter. This will appear below the press banner. ",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -190,7 +190,7 @@
             "label": "CME Letter Top Section Text",
             "name": "cme_letter_top_section_text",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "The CME Letter is broken up into a top, middle and bottom section. The top section is made up of two columns, with text on the left and an image on the right. \r\n\r\nPlease enter the text to go in the left column of the CME Letter Top Section.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -232,7 +232,7 @@
             "label": "CME Letter Middle Section",
             "name": "cme_letter_middle_section",
             "type": "repeater",
-            "instructions": "",
+            "instructions": "The CME Letter Middle Section is made up of two columns. Each column contains an image on the top, a title right below, and then a caption below that.  \r\n\r\nThis section is a special \"repeater\" section. This means that if you want additional rows in the middle section you can do so by clicking the blue \"Add Row\" button.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -385,7 +385,7 @@
             "label": "CME Letter Bottom Section Text",
             "name": "cme_letter_bottom_section_text",
             "type": "wysiwyg",
-            "instructions": "",
+            "instructions": "The CME Letter is broken up into a top, middle and bottom section. The bottom section is made up of two columns, with text on the left and an image on the right. \r\n\r\nPlease enter the text to go in the left column of the CME Letter Top Section.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -440,5 +440,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1459983376
+    "modified": 1460152929
 }

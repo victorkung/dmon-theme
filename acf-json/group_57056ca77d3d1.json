@@ -3,11 +3,11 @@
     "title": "Footer",
     "fields": [
         {
-            "key": "field_57056cae7a672",
-            "label": "Footer Disclaimer",
-            "name": "footer_disclaimer",
-            "type": "wysiwyg",
-            "instructions": "Enter text that will show up in the footer area below the navigation links and social media icons.",
+            "key": "field_5705962d0c04a",
+            "label": "Pre Footer Text",
+            "name": "pre_footer_text",
+            "type": "text",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,10 +15,13 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "<p>\r\nCME Group Inc. has filed a definitive proxy statement with the Securities and Exchange Commission (\"SEC\") regarding the Annual Meeting of Shareholders to be held on May 18, 2016. Shareholders of CME Group Inc. are urged to read the definitive proxy statement and any other relevant materials filed by CME Group Inc. with the SEC because they contain, or will contain, important information about CME Group Inc. and the Annual Meeting. The definitive proxy statement and other relevant materials (when they become available), and any other documents filed by CME Group Inc. with the SEC, may be obtained free of charge at the SEC's web site at www.sec.gov. In addition, shareholders may obtain free copies of these documents by contacting CME Group Inc., Shareholder Relations and Membership Services, 20 South Wacker Drive, Chicago, Illinois 60606. Shareholders are urged to read the definitive proxy statement and the other relevant materials (when they become available) before making any voting decision with respect to matters to be acted on at the Annual Meeting.\r\n<\/p>\r\n<p>\r\nThe preceding material was prepared and distributed solely by the candidate. The views and opinions expressed therein are solely those of the candidate and do not necessarily reflect the views or opinions of CME Group Inc. or its directors, officers or employees, nor have these views or opinions been approved or sanctioned by any of them.\r\n<\/p>",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": "",
+            "readonly": 0,
+            "disabled": 0
         },
         {
             "key": "field_57056f18e8f46",
@@ -53,11 +56,11 @@
             "placeholder": ""
         },
         {
-            "key": "field_5705962d0c04a",
-            "label": "Pre Footer Text",
-            "name": "pre_footer_text",
-            "type": "text",
-            "instructions": "",
+            "key": "field_57056cae7a672",
+            "label": "Footer Disclaimer",
+            "name": "footer_disclaimer",
+            "type": "wysiwyg",
+            "instructions": "Enter text that will show up in the footer area below the navigation links and social media icons.",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -65,13 +68,10 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": "",
-            "readonly": 0,
-            "disabled": 0
+            "default_value": "<p>\r\nCME Group Inc. has filed a definitive proxy statement with the Securities and Exchange Commission (\"SEC\") regarding the Annual Meeting of Shareholders to be held on May 18, 2016. Shareholders of CME Group Inc. are urged to read the definitive proxy statement and any other relevant materials filed by CME Group Inc. with the SEC because they contain, or will contain, important information about CME Group Inc. and the Annual Meeting. The definitive proxy statement and other relevant materials (when they become available), and any other documents filed by CME Group Inc. with the SEC, may be obtained free of charge at the SEC's web site at www.sec.gov. In addition, shareholders may obtain free copies of these documents by contacting CME Group Inc., Shareholder Relations and Membership Services, 20 South Wacker Drive, Chicago, Illinois 60606. Shareholders are urged to read the definitive proxy statement and the other relevant materials (when they become available) before making any voting decision with respect to matters to be acted on at the Annual Meeting.\r\n<\/p>\r\n<p>\r\nThe preceding material was prepared and distributed solely by the candidate. The views and opinions expressed therein are solely those of the candidate and do not necessarily reflect the views or opinions of CME Group Inc. or its directors, officers or employees, nor have these views or opinions been approved or sanctioned by any of them.\r\n<\/p>",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1
         }
     ],
     "location": [
@@ -91,5 +91,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1459984442
+    "modified": 1460152985
 }
